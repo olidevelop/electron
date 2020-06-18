@@ -4,7 +4,7 @@ import { BrowserWindow, ipcMain, IpcMainInvokeEvent, MessageChannelMain } from '
 import { closeAllWindows } from './window-helpers';
 import { emittedOnce } from './events-helpers';
 
-const v8Util = process.electronBinding('v8_util');
+const v8Util = process.electronBinding('v8_util', 'common');
 
 describe('ipc module', () => {
   describe('invoke', () => {

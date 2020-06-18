@@ -1,1 +1,1 @@
-export default process.electronBinding('global_shortcut').globalShortcut;
+export default process.electronBinding('global_shortcut', 'browser').globalShortcut;

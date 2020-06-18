@@ -1,4 +1,4 @@
-const { Notification: ElectronNotification, isSupported } = process.electronBinding('notification');
+const { Notification: ElectronNotification, isSupported } = process.electronBinding('notification', 'common');
 
 ElectronNotification.isSupported = isSupported;
 

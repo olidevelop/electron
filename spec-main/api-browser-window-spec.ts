@@ -65,7 +65,7 @@ describe('BrowserWindow module', () => {
   });
 
   describe('garbage collection', () => {
-    const v8Util = process.electronBinding('v8_util');
+    const v8Util = process.electronBinding('v8_util', 'common');
     afterEach(closeAllWindows);
 
     it('window does not get garbage collected when opened', (done) => {

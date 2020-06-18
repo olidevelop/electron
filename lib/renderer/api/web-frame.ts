@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
 
-const binding = process.electronBinding('web_frame');
+const binding = process.electronBinding('web_frame', 'browser');
 
 class WebFrame extends EventEmitter {
   constructor (public context: Window) {

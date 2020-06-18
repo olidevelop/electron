@@ -1,1 +1,4 @@
-export default process.electronBinding('power_save_blocker').powerSaveBlocker;
+export default process.electronBinding(
+  'power_save_blocker',
+  'browser'
+).powerSaveBlocker;
